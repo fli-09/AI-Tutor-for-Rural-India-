@@ -1,0 +1,67 @@
+{
+  "user_3c13d2ad": {
+    "user_id": "user_3c13d2ad",
+    "topic_performance": {
+      "General": {
+        "easy": {
+          "correct": 6,
+          "total": 10
+        },
+        "medium": {
+          "correct": 1,
+          "total": 8
+        },
+        "hard": {
+          "correct": 0,
+          "total": 0
+        }
+      },
+      "History": {
+        "easy": {
+          "correct": 0,
+          "total": 0
+        },
+        "medium": {
+          "correct": 0,
+          "total": 1
+        },
+        "hard": {
+          "correct": 0,
+          "total": 0
+        }
+      }
+    },
+    "cognitive_levels": {
+      "application": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "analysis": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "recall": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "learning_pace": 13.89176608215639,
+    "preferred_difficulty": "easy",
+    "last_activity": "2025-07-27T13:39:22.544082",
+    "total_questions": 19,
+    "correct_answers": 7
+  }
+}
