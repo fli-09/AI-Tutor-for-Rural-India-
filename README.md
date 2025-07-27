@@ -1,4 +1,4 @@
-AI Tutor for Rural India 🎓
+AI TUTOR FOR RURAL INDIA
 Empowering rural students with AI-driven, curriculum-aligned education.
 This web-based platform provides students in low-connectivity regions with access to personalized learning, interactive quizzes, voice-assisted content, and teacher tools for question generation.
 
