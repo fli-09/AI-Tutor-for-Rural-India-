@@ -1,94 +1,161 @@
-AI TUTOR FOR RURAL INDIA
-Empowering rural students with AI-driven, curriculum-aligned education.
-This web-based platform provides students in low-connectivity regions with access to personalized learning, interactive quizzes, voice-assisted content, and teacher tools for question generation.
+📘 AI Tutor for Rural India
+Empowering every rural student with AI-driven, curriculum-aligned education.
+This web-based platform provides students in low-connectivity regions with access to personalized learning, interactive quizzes, voice-assisted content, and powerful teacher tools for question generation. It's designed to bridge the urban-rural education gap by making quality learning accessible to all.
 
 🌟 Key Features
 For Students
-PDF Learning System: Upload NCERT/State Board PDFs to auto-generate study material.
+📚 PDF Learning System: Upload any NCERT or State Board PDF to instantly generate study materials and notes.
 
-AI Question Generation: Create smart, curriculum-aligned questions (using Gemini 2.5 Flash or local models).
+🤖 AI-Powered Q&A: Ask questions about your curriculum in plain language and get instant, accurate answers.
 
-Quiz System: Practice interactive multiple-choice quizzes with instant scoring & feedback.
+✍️ Interactive Quizzes: Practice with smart, multiple-choice quizzes that provide instant scoring and feedback to help you master topics.
 
-Voice Support:
+🗣️ Full Voice Support:
 
-Text-to-Speech (TTS): Reads lessons/questions aloud.
+Text-to-Speech (TTS): Have lessons and questions read aloud to you.
 
-Speech-to-Text (STT): Enables voice answers.
+Speech-to-Text (STT): Answer questions and interact with the platform using just your voice.
 
-Multilingual: Supports 10+ Indian languages.
+🌐 Multilingual Interface: Access content and interact with the tutor in 10+ Indian languages.
 
-Progress Tracking: Personal dashboards with strengths, weaknesses, and analytics.
+📈 Personal Progress Dashboard: Track your performance, identify strengths and weaknesses, and get personalized learning recommendations.
 
 For Teachers
-Create custom question papers from uploaded materials.
+📝 Custom Question Paper Generator: Create high-quality question papers from uploaded materials in seconds.
 
-Track student performance and generate reports.
+📊 Student Performance Analytics: Monitor class progress, track individual student performance, and generate insightful reports.
 
-Export ready-made papers in multiple formats.
+📤 Multiple Export Formats: Download question papers and reports in PDF, DOCX, or plain text.
 
 🧠 Why This Project Matters
-Unlike generic e-learning apps, AI Tutor for Rural India is:
+Unlike generic e-learning apps, our AI Tutor is built from the ground up to solve the unique challenges of rural education in India.
 
-Designed for low-bandwidth areas (offline-first).
+Feature
 
-Accepts any curriculum PDF—making it adaptable to different state boards.
+Generic Apps
 
-Provides real-time voice support for low-literacy users.
+AI Tutor for Rural India
 
-Offers analytics & adaptive learning paths instead of just static lessons.
+Connectivity
 
-🛠 Tech Stack
-Frontend: HTML, CSS, JavaScript (Bootstrap for responsive UI)
-Backend: Flask (Python)
-AI/NLP: Gemini 2.5 Flash API (online), Phi-3 (local fallback), Hugging Face models
-PDF Processing: PyMuPDF
-Vector Search (RAG): ChromaDB
-Voice: Whisper (STT), gTTS/Pyttsx3 (TTS)
-Database: TinyDB (lightweight), ready to extend to SQLite/PostgreSQL
-Deployment: Flask + Gunicorn (or Docker for production)
+Requires stable, high-speed internet.
 
-🚀1. Quick Setup
-bash
-Copy
-Edit
-git clone <repo-url>
+Designed for low-bandwidth areas with an offline-first architecture.
+
+Curriculum
+
+Limited to a fixed, often urban-centric curriculum.
+
+Accepts any curriculum PDF, making it hyper-relevant to any state board.
+
+Accessibility
+
+Primarily text-based and in English/Hindi.
+
+Provides real-time voice support in local languages for low-literacy users.
+
+Learning Model
+
+Static, one-size-fits-all video lessons.
+
+Offers adaptive learning paths and personalized analytics.
+
+🛠️ Tech Stack
+Component
+
+Technology / Library
+
+Frontend
+
+HTML, CSS, JavaScript (Bootstrap for responsive UI)
+
+Backend
+
+Flask (Python)
+
+AI/NLP
+
+Gemini API (online), Phi-3 (local fallback), Hugging Face Transformers
+
+PDF Processing
+
+PyMuPDF
+
+Vector Search (RAG)
+
+ChromaDB
+
+Voice I/O
+
+Whisper (STT), gTTS / Pyttsx3 (TTS)
+
+Database
+
+TinyDB (lightweight, easily extendable to SQLite/PostgreSQL)
+
+Deployment
+
+Flask + Gunicorn (or Docker for production)
+
+🚀 Getting Started
+1. Prerequisites
+Python 3.9+
+
+pip and venv
+
+2. Quick Setup
+Clone the repository and set up the virtual environment.
+
+# Clone the repository
+git clone https://github.com/your-username/ai-tutor.git
 cd ai-tutor
+
+# Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+
+# Install the required packages
 pip install -r requirements.txt
+
+3. Run the Application
+Start the Flask development server.
+
 python src/app.py
 
-2. Run the App
-bash
-Copy
-Edit
-cd src
-python app.py
+Navigate to http://127.0.0.1:5000 in your web browser.
 
 📊 How It Works
-Upload Curriculum PDFs (NCERT/State Boards)
+Upload: A teacher or student uploads a curriculum PDF (e.g., NCERT, State Board textbook).
 
-AI extracts and chunks text → creates a knowledge base (RAG).
+Process: The AI backend extracts and chunks the text, creating a vector-based knowledge base using a Retrieval-Augmented Generation (RAG) pipeline.
 
-Students generate quizzes & take voice-enabled tests.
+Interact: Students can now generate quizzes, ask questions, and take voice-enabled tests based on the uploaded content.
 
-Teachers download question papers & view analytics.
+Analyze: Teachers can create question papers and view a dashboard with detailed analytics of student performance.
 
-System tracks performance → gives adaptive learning recommendations.
-
-🎯 Why It’s Unique
-✔ Works in low-bandwidth rural areas
-✔ Supports offline-first design (local TTS/STT + caching)
-✔ Custom curriculum upload → hyper-local relevance
-✔ Multilingual + voice-first UI → helps low-literacy students
+Adapt: The system tracks performance data to provide adaptive learning recommendations, helping students focus on their weak points.
 
 ✅ Future Roadmap
- Mobile app (Flutter) for full offline use
+[ ] Mobile App: Develop a Flutter-based mobile application with full offline capabilities.
 
- Preloaded NCERT library for instant access
+[ ] Preloaded Library: Integrate a pre-loaded NCERT library for instant access without uploads.
 
- Gamified quizzes for engagement
+[ ] Gamification: Introduce points, badges, and leaderboards to make learning more engaging.
 
- AI-powered personalized learning paths
+[ ] Personalized Learning Paths: Implement an AI-powered recommendation engine to create fully adaptive learning journeys for each student.
 
+🤝 Contributing
+Contributions are welcome! Whether it's bug fixes, new features, or documentation improvements, please feel free to open an issue or submit a pull request.
+
+Fork the repository.
+
+Create your feature branch (git checkout -b feature/AmazingFeature).
+
+Commit your changes (git commit -m 'Add some AmazingFeature').
+
+Push to the branch (git push origin feature/AmazingFeature).
+
+Open a Pull Request.
+
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
